@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DescricaoFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/containerToolbarFragmentDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbaDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Detalhes"
+            android:background="@color/white"
+            android:elevation="25dp"
+            app:titleCentered="true"
+            app:navigationIconTint="@color/Blue_firebase"
+            app:titleTextColor="@color/Blue_firebase" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgemFragmentDescricao"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kinguios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerToolbarFragmentDescricao"
+        app:shapeAppearanceOverlay="@style/corner" />
+
+    <TextView
+        android:id="@+id/tvNomeFragmentDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Kinguios"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgemFragmentDescricao"/>
+
+    <TextView
+        android:id="@+id/tvHifemFragmentDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNomeFragmentDescricao"
+        app:layout_constraintStart_toEndOf="@id/tvNomeFragmentDescricao"
+        app:layout_constraintTop_toTopOf="@+id/tvNomeFragmentDescricao" />
+
+    <TextView
+        android:id="@+id/tvIdadeFragmentDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="18"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHifemFragmentDescricao"
+        app:layout_constraintStart_toEndOf="@+id/tvHifemFragmentDescricao"
+        app:layout_constraintTop_toTopOf="@+id/tvHifemFragmentDescricao" />
+
+    <TextView
+        android:id="@+id/tvIdade2FragmentDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="anos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIdadeFragmentDescricao"
+        app:layout_constraintStart_toEndOf="@id/tvIdadeFragmentDescricao"
+        app:layout_constraintTop_toTopOf="@+id/tvIdadeFragmentDescricao" />
+
+
+    <TextView
+        android:id="@+id/tvEspecieFragementDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Peixe"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNomeFragmentDescricao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNomeFragmentDescricao"
+        app:layout_constraintTop_toBottomOf="@id/tvNomeFragmentDescricao" />
+
+    <TextView
+        android:id="@+id/tvDetalhesFragmentsDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="17"
+        android:text="@string/kinguios_descricao"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvEspecieFragementDescricao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvEspecieFragementDescricao"
+        app:layout_constraintTop_toBottomOf="@id/tvEspecieFragementDescricao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

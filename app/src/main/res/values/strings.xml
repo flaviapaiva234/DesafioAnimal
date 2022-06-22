@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DesafioAnimal</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="campo_a_preencher">Tem campo vazio, por favor preencha-os</string>
+    <string name="kinguios_descricao">Carassius auratus Linnaeus, conhecido pelos nomes comuns de peixe-japonês, peixinho-dourado, peixe-vermelho ou pimpão-encarnado (ou ainda quínguio no Brasil, do japonês kingyo ou kinguio), é uma espécie de pequenos peixes de água doce pertencente à família dos ciprinídeos (Cyprinidae), a que pertencem as carpas. Os Kinguis se originam da Ásia. Diferentemente do que muitos acreditam, o kinguio não é um peixe de vida curta. Pelo contrário! Estima-se que ele possa viver entre 10 a 25 anos num aquário ornamental. Mas é muito comum ouvir falar em peixes dourados que não passaram de um mês de vida.</string>
+</resources>
