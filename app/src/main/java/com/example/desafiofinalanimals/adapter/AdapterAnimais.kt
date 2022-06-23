@@ -35,13 +35,14 @@ class AdapterAnimais(val animaisListados: AnimaisResponse): RecyclerView.Adapter
         val item = animaisListados.animals[position]
         holder.onBind(item)
         holder.itemView.setOnClickListener {
-
+            val action = HomeFragment.HomeFragmentToCadastroFragmente()
+            with(holder) {
+                itemView.findNavController().navigate(action)
+            }
         }
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = animaisListados.animals.size
 
 
 }

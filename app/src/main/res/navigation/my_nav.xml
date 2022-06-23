@@ -11,37 +11,26 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_cadastrarFragment"
-            app:destination="@id/cadastrarFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_favoritarFragment"
-            app:destination="@id/favoritarFragment" />
+            android:id="@+id/action_homeFragment_to_descricaoFragment"
+            app:destination="@id/descricaoFragment" />
     </fragment>
     <fragment
         android:id="@+id/cadastrarFragment"
         android:name="com.example.desafiofinalanimals.fragment.CadastrarFragment"
         android:label="fragment_cadastrar"
-        tools:layout="@layout/fragment_cadastrar" >
-        <action
-            android:id="@+id/action_cadastrarFragment_to_descricaoFragment"
-            app:destination="@id/descricaoFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_cadastrar" />
     <fragment
         android:id="@+id/favoritarFragment"
         android:name="com.example.desafiofinalanimals.fragment.FavoritarFragment"
         android:label="fragment_favoritar"
-        tools:layout="@layout/fragment_favoritar" >
-        <action
-            android:id="@+id/action_favoritarFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_favoritar" />
     <fragment
         android:id="@+id/descricaoFragment"
         android:name="com.example.desafiofinalanimals.fragment.DescricaoFragment"
         android:label="fragment_descricao"
         tools:layout="@layout/fragment_descricao" >
         <action
-            android:id="@+id/action_descricaoFragment_to_homeFragment"
+            android:id="@+id/action_descricaoFragment_to_homeFragment3"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
