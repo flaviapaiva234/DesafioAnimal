@@ -12,11 +12,7 @@ class CadastroRepository {
     private var cadastroRoute = ApiAnimais ("https://bootcamp-ios-api.herokuapp.com").create()
 
     suspend fun doTheRegistration( // o sunpend vai fazer tudo em segundo plano usando o coroutines
-        name: String,
-        description: String,
-        age: Int,
-        species: String,
-        image: String
+        name: String, description: String, age: Int, species: String, image: String
     ): Flow<CadastroResponse>{ // o flow retorna a corrente de dados
         return flow {
             cadastroRoute.doRegistration( //Faz a requisição passando o corpo da requisição
